@@ -564,123 +564,184 @@ namespace task_4
         #endregion
 
         #region task 15
-        /*
-         * 15) IF operatoru ile yoxla.
-               Verilmish ededdin 1-ile 365 arasinda olugunu yoxla (1 ve 365 ozude daxil olmaq sherti ile)
-              Ededin ilin hansi ayina dushduyunu tap. Ve hemin ay ve gune uygun hansi burc oldugunu goster
-         */
-        l1:
-            Console.Write("ededi daxil edin: ");
-            if (!int.TryParse(Console.ReadLine(), out int value))
-            {
-                Console.WriteLine("ededi duzgun daxil edin");
-                goto l1;
-            }
-            if(value<1 || value>365) 
-            {
-                Console.WriteLine("ededi duzgun daxil edin");
-                goto l1;
-            }
+        ///*
+        // * 15) IF operatoru ile yoxla.
+        //       Verilmish ededdin 1-ile 365 arasinda olugunu yoxla (1 ve 365 ozude daxil olmaq sherti ile)
+        //      Ededin ilin hansi ayina dushduyunu tap. Ve hemin ay ve gune uygun hansi burc oldugunu goster
+        // */
+        //l1:
+        //    Console.Write("ededi daxil edin: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int value))
+        //    {
+        //        Console.WriteLine("ededi duzgun daxil edin");
+        //        goto l1;
+        //    }
+        //    if(value<1 || value>365) 
+        //    {
+        //        Console.WriteLine("ededi duzgun daxil edin");
+        //        goto l1;
+        //    }
 
-            if (1 <= value && value <= 31)
-            {
-                Console.Write("Yanvar ayi, ");
-            }
-            else if (32 <= value && value <= 59)
-            {
-                Console.Write("Fevral ayi, ");
-            }
-            else if (60 <= value && value <= 90)
-            {
-                Console.Write("Mart ayi, ");
-            }
-            else if (91 <= value && value <= 120)
-            {
-                Console.Write("Aprel ayi, ");
-            }
-            else if (121 <= value && value <= 151)
-            {
-                Console.Write("May ayi, ");
-            }
-            else if (152 <= value && value <= 181)
-            {
-                Console.Write("Iyun ayi, ");
-            }
-            else if (182 <= value && value <= 212)
-            {
-                Console.Write("Iyul ayi, ");
-            }
-            else if (213 <= value && value <= 243)
-            {
-                Console.Write("Avqust ayi, ");
-            }
-            else if (244 <= value && value <= 273)
-            {
-                Console.Write("Sentyabr ayi, ");
-            }
-            else if (274 <= value && value <= 304)
-            {
-                Console.Write("Oktyabr ayi, ");
-            }
-            else if (305 <= value && value <= 334)
-            {
-                Console.Write("Noyabr ayi, ");
-            }
-            else 
-            {
-                Console.Write("Dekabr ayi, ");
-            }
+        //    if (1 <= value && value <= 31)
+        //    {
+        //        Console.Write("Yanvar ayi, ");
+        //    }
+        //    else if (32 <= value && value <= 59)
+        //    {
+        //        Console.Write("Fevral ayi, ");
+        //    }
+        //    else if (60 <= value && value <= 90)
+        //    {
+        //        Console.Write("Mart ayi, ");
+        //    }
+        //    else if (91 <= value && value <= 120)
+        //    {
+        //        Console.Write("Aprel ayi, ");
+        //    }
+        //    else if (121 <= value && value <= 151)
+        //    {
+        //        Console.Write("May ayi, ");
+        //    }
+        //    else if (152 <= value && value <= 181)
+        //    {
+        //        Console.Write("Iyun ayi, ");
+        //    }
+        //    else if (182 <= value && value <= 212)
+        //    {
+        //        Console.Write("Iyul ayi, ");
+        //    }
+        //    else if (213 <= value && value <= 243)
+        //    {
+        //        Console.Write("Avqust ayi, ");
+        //    }
+        //    else if (244 <= value && value <= 273)
+        //    {
+        //        Console.Write("Sentyabr ayi, ");
+        //    }
+        //    else if (274 <= value && value <= 304)
+        //    {
+        //        Console.Write("Oktyabr ayi, ");
+        //    }
+        //    else if (305 <= value && value <= 334)
+        //    {
+        //        Console.Write("Noyabr ayi, ");
+        //    }
+        //    else 
+        //    {
+        //        Console.Write("Dekabr ayi, ");
+        //    }
 
-            if (21 <= value && value <= 49)
-            {
-                Console.Write(" Dolca burcu");
-            }
-            else if (50 <= value && value <= 79)
-            {
-                Console.Write(" Baliqlar burcu");
-            }
-            else if (80 <= value && value <= 110)
-            {
-                Console.Write(" Qoc burcu");
-            }
-            else if (111 <= value && value <= 140)
-            {
-                Console.Write(" Buga burcu");
-            }
-            else if (141 <= value && value <= 172)
-            {
-                Console.Write(" Ekizler burcu");
-            }
-            else if (173 <= value && value <= 202)
-            {
-                Console.Write(" Xerceng burcu");
-            }
-            else if (203 <= value && value <= 232)
-            {
-                Console.Write(" Sir burcu");
-            }
-            else if (233 <= value && value <= 263)
-            {
-                Console.Write(" Qiz burcu");
-            }
-            else if (264 <= value && value <= 294)
-            {
-                Console.Write(" Terezi burcu");
-            }
-            else if (295 <= value && value <= 324)
-            {
-                Console.Write(" Eqreb burcu");
-            }
-            else if (325 <= value && value <= 354)
-            {
-                Console.Write(" Oxatan burcu");
-            }
-            else
-            {
-                Console.Write(" Oglaq burcu");
-            }
+        //    if (21 <= value && value <= 49)
+        //    {
+        //        Console.Write(" Dolca burcu");
+        //    }
+        //    else if (50 <= value && value <= 79)
+        //    {
+        //        Console.Write(" Baliqlar burcu");
+        //    }
+        //    else if (80 <= value && value <= 110)
+        //    {
+        //        Console.Write(" Qoc burcu");
+        //    }
+        //    else if (111 <= value && value <= 140)
+        //    {
+        //        Console.Write(" Buga burcu");
+        //    }
+        //    else if (141 <= value && value <= 172)
+        //    {
+        //        Console.Write(" Ekizler burcu");
+        //    }
+        //    else if (173 <= value && value <= 202)
+        //    {
+        //        Console.Write(" Xerceng burcu");
+        //    }
+        //    else if (203 <= value && value <= 232)
+        //    {
+        //        Console.Write(" Sir burcu");
+        //    }
+        //    else if (233 <= value && value <= 263)
+        //    {
+        //        Console.Write(" Qiz burcu");
+        //    }
+        //    else if (264 <= value && value <= 294)
+        //    {
+        //        Console.Write(" Terezi burcu");
+        //    }
+        //    else if (295 <= value && value <= 324)
+        //    {
+        //        Console.Write(" Eqreb burcu");
+        //    }
+        //    else if (325 <= value && value <= 354)
+        //    {
+        //        Console.Write(" Oxatan burcu");
+        //    }
+        //    else
+        //    {
+        //        Console.Write(" Oglaq burcu");
+        //    }
+
+        #endregion
+
+        #region Task 16
+        // /*
+        // 16)* Verilmish 6 reqemli ededde nece unikal reqem var ? ( UNIKAL- Ededin daxilde her reqemden bir numayende secilecek. Yekunda nece numayende olacaq?)
+        // */
+        //l1:
+        //    Console.Write("ededi daxil edin: ");
+        //    if (!int.TryParse(Console.ReadLine(), out int value))
+        //    {
+        //        Console.WriteLine("ededi duzgun daxil edin");
+        //        goto l1;
+        //    }
+        //    if ((int)Math.Log10(value) + 1 != 6)
+        //    {
+        //        Console.WriteLine("ededi duzgun daxil edin");
+        //        goto l1;    
+        //    }
+        //    int remainder_1 = value % 10;
+        //    value /= 10;
+        //    int remainder_2 = value % 10;
+        //    value /= 10;
+        //    int remainder_3 = value % 10;
+        //    value /= 10;
+        //    int remainder_4 = value % 10;
+        //    value /= 10;
+        //    int remainder_5 = value % 10;
+        //    value /= 10;
+        //    int remainder_6 = value % 10;
+        //    value /= 10;
+        //    int contains = 0;
+        //    if (remainder_6 == remainder_5 || remainder_6 == remainder_4 || remainder_6 == remainder_3 || remainder_6 == remainder_2 || remainder_6 == remainder_1)
+        //    {
+        //        contains++;
+        //        Console.Write(remainder_6);
+        //    }
+        //    if ((remainder_5 != remainder_6 ) && (remainder_5 == remainder_1 || remainder_5 == remainder_2 || remainder_5 == remainder_3 || remainder_5 == remainder_4))
+        //    {
+        //        contains++;
+        //        Console.Write(remainder_5);
+        //    }
+        //    if ((remainder_4 != remainder_6 || remainder_4 != remainder_5) && ( remainder_4 == remainder_3 || remainder_4 == remainder_2 || remainder_4 == remainder_1))
+        //    {
+        //        contains++;
+        //        Console.Write(remainder_4);
+        //    }
+        //    if ((remainder_3 != remainder_6 || remainder_3 != remainder_5 || remainder_3 != remainder_4) && ( remainder_3 == remainder_2 || remainder_3 == remainder_1))
+        //    {
+        //        contains++;
+        //        Console.Write(remainder_3);
+        //    }
+        //    if ((remainder_2 != remainder_6 ||remainder_2 != remainder_5 || remainder_2 != remainder_4 || remainder_2 != remainder_3 ) && ( remainder_2 == remainder_1))
+        //    {
+        //        contains++;
+        //        Console.Write(remainder_2);
+        //    }
+         
+        //    Console.Write($" , {contains}");
+
 
             #endregion
+
         }
 
 
